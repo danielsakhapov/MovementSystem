@@ -20,7 +20,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #set the default path for built libraries to the "lib" directory
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-rosbuild_add_executable(autonomusCar src/main.cpp src/MovementSystem.cpp)
+rosbuild_add_executable(Navigator src/main.cpp src/Navigator.cpp src/arduino.cpp)
 
 #uncomment if you have defined messages
 #rosbuild_genmsg()
