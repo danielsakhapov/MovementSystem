@@ -1,4 +1,4 @@
-#include "Navigator.h"
+#include "Navigator.hpp"
 
 Navigator::Navigator(int argc, char* argv[], ros::NodeHandle& nodeHandle)
 {
