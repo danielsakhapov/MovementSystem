@@ -27,7 +27,17 @@ int main(int argc, char* argv[])
 		Engine engine = pNavigator->getEngine();		
 
 		std::stringstream ss;
-		ss << std::to_string(engine.angle) << ' ' << std::to_string(engine.speed) << ' ' << std::to_string(engine.direction);
+		if (engine.speed == 0)
+			ss << "0 0 ";
+		else {
+			if (abs(engine.angle) < 15)
+				ss << "1 1 ";
+			else
+				if (0 < engine.angle)
+					ss << "1 0 ";
+				else
+					ss << "0 1 ";
+		}
 		msg.data = ss.str();
 
 		pub.publish(msg);
@@ -35,7 +45,7 @@ int main(int argc, char* argv[])
 		ros::spinOnce();
 		loop_rate.sleep();
 		
-		std::cout << engine.angle << ' ' << engine.speed << ' ' << engine.direction << std::endl;
+		std::cout << ss.str() << ' ' << engine.angle << ' ' << engine.speed << std::endl;
 	}
 
 	return 0;

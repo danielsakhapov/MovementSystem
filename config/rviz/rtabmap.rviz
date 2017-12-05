@@ -28,7 +28,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: MapCloud
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -132,43 +132,6 @@ Visualization Manager:
       Topic: /rtabmap/odom
       Unreliable: false
       Value: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rtabmap_ros/MapCloud
-      Cloud decimation: 4
-      Cloud max depth (m): 4
-      Cloud min depth (m): 0
-      Cloud voxel size (m): 0.00999999978
-      Color: 255; 255; 255
-      Color Transformer: RGB8
-      Download graph: false
-      Download map: false
-      Enabled: true
-      Filter ceiling (m): 0
-      Filter floor (m): 0
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: MapCloud
-      Node filtering angle (degrees): 30
-      Node filtering radius (m): 0
-      Position Transformer: XYZ
-      Size (Pixels): 3
-      Size (m): 0.00999999978
-      Style: Flat Squares
-      Topic: /rtabmap/mapData
-      Unreliable: false
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -193,7 +156,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 7.8213706
+      Distance: 9.30078888
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -208,10 +171,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.854796708
+      Pitch: 0.970203042
       Target Frame: map
       Value: Orbit (rviz)
-      Yaw: 2.6554029
+      Yaw: 3.14040112
     Saved: ~
 Window Geometry:
   Displays:
