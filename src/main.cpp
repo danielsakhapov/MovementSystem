@@ -28,15 +28,15 @@ int main(int argc, char* argv[])
 
 		std::stringstream ss;
 		if (engine.speed == 0)
-			ss << "0 0 ";
+			ss << "0 0";
 		else {
 			if (abs(engine.angle) < 15)
-				ss << "1 1 ";
+				ss << "1 1";
 			else
 				if (0 < engine.angle)
-					ss << "1 0 ";
+					ss << "1 -1";
 				else
-					ss << "0 1 ";
+					ss << "-1 1";
 		}
 		msg.data = ss.str();
 

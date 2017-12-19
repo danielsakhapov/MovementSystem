@@ -34,7 +34,11 @@ void messageCb( const std_msgs::String& arduinoCommand) {
         		s[len] = arduinoCommand.data[i];
         		++len;
         	}
-        	else {			
+        	else {
+			if (i == strlen(arduinoCommand.data) - 1) {
+				s[len] = arduinoCommand.data[i];
+				++len;
+			}
         		int num = 0, f = 1;
         		for (int k = 0; k < len; ++k)
         			f *= 10;

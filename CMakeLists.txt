@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.4.6)
 
 set (CMAKE_CXX_STANDARD 14)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -pedantic")
 
 include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
 include_directories(src)
