@@ -164,7 +164,7 @@ void Navigator::followPath_()
 				break;	
 
 			uELock.lock();
-			engine_.angle = -(localGoal.theta - robotPosition.theta);
+			engine_.angle = robotPosition.theta - localGoal.theta;
 			engine_.speed = 1;
 			engine_.direction = 1;
 			uELock.unlock();
