@@ -1,27 +1,27 @@
-#include "Navigator.hpp"
+#include "Navigator.h"
 
 Navigator::Navigator(int argc, char* argv[], ros::NodeHandle& nodeHandle)
 {
-	_hasNewMap = false;
-	_hasNewGoal = false;
-	_hasNewOdometry = false;
+	hasNewMap_ = false;
+	hasNewGoal_ = false;
+	hasNewOdometry_ = false;
 
-	_engine.angle = 0;
-	_engine.speed = 0;
-	_engine.direction = 0;
+	engine_.angle = 0;
+	engine_.speed = 0;
+	engine_.direction = 0;
 
-	_mapSubcriber = nodeHandle.subscribe("rtabmap/grid_map", 100, &Navigator::_mapCallback, this);
-	_odometrySubcriber = nodeHandle.subscribe("rtabmap/odom", 1000, &Navigator::_odometryCallback, this);
-	_goalSubcriber = nodeHandle.subscribe("move_base_simple/goal", 1000, &Navigator::_goalCallback, this);
-	_pathPublisher = nodeHandle.advertise<nav_msgs::Path>("Navigator/Path", 1000);
+	mapSubcriber_ = nodeHandle.subscribe("rtabmap/grid_map", 100, &Navigator::mapCallback_, this);
+	odometrySubcriber_ = nodeHandle.subscribe("rtabmap/odom", 1000, &Navigator::odometryCallback_, this);
+	goalSubcriber_ = nodeHandle.subscribe("move_base_simple/goal", 1000, &Navigator::goalCallback_, this);
+	pathPublisher_ = nodeHandle.advertise<nav_msgs::Path>("Navigator/Path", 1000);
 
-	std::thread findPathThread(&Navigator::_findPath, this);
+	std::thread findPathThread(&Navigator::findPath_, this);
 	findPathThread.detach();
 
 	//std::thread checkPathThread(&Navigator::_checkPath, this);
 	//checkPathThread.detach();
 
-	std::thread followPathThread(&Navigator::_followPath, this);
+	std::thread followPathThread(&Navigator::followPath_, this);
 	followPathThread.detach();
 }
 
@@ -34,62 +34,62 @@ Navigator::~Navigator()
 
 Engine& Navigator::getEngine()
 {
-	boost::shared_lock<boost::shared_mutex> sLock(_engineMutex);
-	return _engine;
+	boost::shared_lock<boost::shared_mutex> sLock(engineMutex_);
+	return engine_;
 }
 
 
 
-void Navigator::_findPath()
+void Navigator::findPath_()
 {
 	while (ros::ok())
 	{
-		std::unique_lock<boost::shared_mutex> uDLock(_dataMutex);
-		_goalCondVar.wait( uDLock, [&, this]{ return _hasNewGoal; });
-		_hasNewGoal = false;
-		_hasNewPath = true;
+		std::unique_lock<boost::shared_mutex> uDLock(dataMutex_);
+		goalCondVar_.wait( uDLock, [&, this]{ return hasNewGoal_; });
+		hasNewGoal_ = false;
+		hasNewPath_ = true;
 
-		std::unique_lock<boost::shared_mutex> uELock(_engineMutex);
-		_engine.angle = 0;
-		_engine.speed = 0;
-		_engine.direction = 0;
+		std::unique_lock<boost::shared_mutex> uELock(engineMutex_);
+		engine_.angle = 0;
+		engine_.speed = 0;
+		engine_.direction = 0;
 		uELock.unlock();
 
-		u32 mapWidth =_pMap->info.width;
-		u32 mapHeight = _pMap->info.height;
-		double mapResolution = _pMap->info.resolution;
+		u32 mapWidth = pMap_->info.width;
+		u32 mapHeight = pMap_->info.height;
+		double mapResolution = pMap_->info.resolution;
 
-		double mapAbsolutePositionX = _pMap->info.origin.position.x;
-		double mapAbsolutePositionY = _pMap->info.origin.position.y;
+		double mapAbsolutePositionX = pMap_->info.origin.position.x;
+		double mapAbsolutePositionY = pMap_->info.origin.position.y;
 
-		double robotAbsolutePositionX = _pOdometry->pose.pose.position.x - _pMap->info.origin.position.x;
-		double robotAbsolutePositionY = _pOdometry->pose.pose.position.y - _pMap->info.origin.position.y;
+		double robotAbsolutePositionX = pOdometry_->pose.pose.position.x - pMap_->info.origin.position.x;
+		double robotAbsolutePositionY = pOdometry_->pose.pose.position.y - pMap_->info.origin.position.y;
 
-		double goalAbsolutePositionX = _pGoal->pose.position.x - _pMap->info.origin.position.x;
-		double goalAbsolutePositionY = _pGoal->pose.position.y - _pMap->info.origin.position.y;
+		double goalAbsolutePositionX = pGoal_->pose.position.x - pMap_->info.origin.position.x;
+		double goalAbsolutePositionY = pGoal_->pose.position.y - pMap_->info.origin.position.y;
 
 		uPosition robotCellPosition;
 		robotCellPosition.x = robotAbsolutePositionY / mapResolution; // changed axes
 		robotCellPosition.y = robotAbsolutePositionX / mapResolution; // changed axes
-		robotCellPosition.theta = _getAngleFromQuaternion(_pOdometry->pose.pose.orientation);
+		robotCellPosition.theta = getAngleFromQuaternion_(pOdometry_->pose.pose.orientation);
 
 		uPosition goalCellPosition;
 		goalCellPosition.x = goalAbsolutePositionY / mapResolution; // changed axes
 		goalCellPosition.y = goalAbsolutePositionX / mapResolution; // changed axes
-		goalCellPosition.theta = _getAngleFromQuaternion(_pGoal->pose.orientation);
+		goalCellPosition.theta = getAngleFromQuaternion_(pGoal_->pose.orientation);
 
 		vec_vec_bool map(mapHeight, vec_bool(mapWidth, false));
 		for(u32 i = 0, k = 0; i < mapHeight; ++i)
 			for (u32 j = 0; j < mapWidth; ++j)
-				map[i][j] = (_pMap->data[k++] == 0);
+				map[i][j] = (pMap_->data[k++] == 0);
 
 		uDLock.unlock();
 
-		vec_uPosition path = _buildPath(map, robotCellPosition, goalCellPosition);
+		vec_uPosition path = buildPath_(map, robotCellPosition, goalCellPosition);
 
 		if (!path.empty()) {
-			std::lock_guard<boost::shared_mutex> uPLock(_pathMutex);
-			_path.clear();
+			std::lock_guard<boost::shared_mutex> uPLock(pathMutex_);
+			path_.clear();
 			nav_msgs::Path rosPath;
 			rosPath.header.frame_id = "odom";
 			geometry_msgs::PoseStamped pose;
@@ -97,129 +97,185 @@ void Navigator::_findPath()
 			for (auto it: path) {
 				pose.pose.position.x = it.y * mapResolution + mapAbsolutePositionX;
 				pose.pose.position.y = it.x * mapResolution + mapAbsolutePositionY;
-				_path.push_back({it.y * mapResolution, it.x * mapResolution, it.theta});
+				path_.push_back({it.y * mapResolution, it.x * mapResolution, it.theta});
 				rosPath.poses.push_back(pose);
 			}
-			_pathPublisher.publish(rosPath);
-			_pathCondVar.notify_one();
+			pathPublisher_.publish(rosPath);
+			pathCondVar_.notify_one();
 		}
 	}
 }
 
 
 
-void Navigator::_checkPath()
+void Navigator::checkPath_()
 {
 	while (ros::ok())
 	{
-		std::unique_lock<boost::shared_mutex> uDLock(_dataMutex);
-		_mapCondVar.wait( uDLock, [&, this]{ return _hasNewMap; });
-		_hasNewMap = false;
-		boost::shared_lock<boost::shared_mutex> sPLock(_pathMutex);
+		std::unique_lock<boost::shared_mutex> uDLock(dataMutex_);
+		mapCondVar_.wait( uDLock, [&, this]{ return hasNewMap_; });
+		hasNewMap_ = false;
+		boost::shared_lock<boost::shared_mutex> sPLock(pathMutex_);
 
 		bool isPathGood = true;
-		for (auto it : _path) {
-			u32 k = (it.y / _pMap->info.resolution) * _pMap->info.width + (it.x / _pMap->info.resolution);
-			isPathGood &= (_pMap->data[k] == 0);
+		for (auto it : path_) {
+			u32 k = (it.y / pMap_->info.resolution) * pMap_->info.width + (it.x / pMap_->info.resolution);
+			isPathGood &= (pMap_->data[k] == 0);
 		}
 
 		sPLock.unlock();
 		uDLock.unlock();
 
 		if (!isPathGood) {
-			_hasNewGoal = true;
-			_goalCondVar.notify_one();
+			hasNewGoal_ = true;
+			goalCondVar_.notify_one();
 		}
 	}
 }
 
 
 
-void Navigator::_followPath()
+void Navigator::followPath_()
 {
 	while (ros::ok())
 	{
-		std::unique_lock<boost::shared_mutex> uPLock(_pathMutex);
-		_pathCondVar.wait( uPLock, [&, this]{ return !_path.empty(); });
-		_hasNewPath = false;
-		dPosition localGoal = _path.front();
-		_path.pop_front();
+		std::unique_lock<boost::shared_mutex> uPLock(pathMutex_);
+		pathCondVar_.wait( uPLock, [&, this]{ return !path_.empty(); });
+		hasNewPath_ = false;
+		dPosition localGoal = path_.front();
+		path_.pop_front();
 		uPLock.unlock();
 
 		dPosition robotPosition;
 		auto sqr = [](auto a) { return a * a; };
-		std::unique_lock<boost::shared_mutex> uDLock(_dataMutex, std::defer_lock);
-		std::unique_lock<boost::shared_mutex> uELock(_engineMutex, std::defer_lock);
+		std::unique_lock<boost::shared_mutex> uDLock(dataMutex_, std::defer_lock);
+		std::unique_lock<boost::shared_mutex> uELock(engineMutex_, std::defer_lock);
 		auto distance = [&]() { return (sqrt(sqr(robotPosition.x - localGoal.x) + sqr(robotPosition.y - localGoal.y))); };
-		while (!_hasNewPath) {
+		while (!hasNewPath_) {
 			uDLock.lock();
-			_odometryCondVar.wait( uDLock, [&, this]{ return _hasNewOdometry; });
+			odometryCondVar_.wait( uDLock, [&, this]{ return hasNewOdometry_; });
 
-			robotPosition.x = _pOdometry->pose.pose.position.x - _pMap->info.origin.position.x;
-			robotPosition.y = _pOdometry->pose.pose.position.y - _pMap->info.origin.position.y;
-			robotPosition.theta = _getAngleFromQuaternion(_pOdometry->pose.pose.orientation);
+			robotPosition.x = pOdometry_->pose.pose.position.x - pMap_->info.origin.position.x;
+			robotPosition.y = pOdometry_->pose.pose.position.y - pMap_->info.origin.position.y;
+			robotPosition.theta = getAngleFromQuaternion_(pOdometry_->pose.pose.orientation);
 			uDLock.unlock();
 
-			if (distance() < 1)
-				break;
+			if (distance() < 0.1)
+				break;	
 
 			uELock.lock();
-			_engine.angle = -(localGoal.theta - robotPosition.theta);
-			_engine.speed = 1;
-			_engine.direction = 1;
+			engine_.angle = -(localGoal.theta - robotPosition.theta);
+			engine_.speed = 1;
+			engine_.direction = 1;
 			uELock.unlock();
 		}
 		uELock.lock();
-		_engine.angle = 0;
-		_engine.speed = 0;
-		_engine.direction = 0;
+		engine_.angle = 0;
+		engine_.speed = 0;
+		engine_.direction = 0;
 		uELock.unlock();
 	}
 }
 
 
 
-vec_uPosition Navigator::_buildPath(vec_vec_bool& map, uPosition& robotPosition, uPosition& goalPosition)
+vec_uPosition Navigator::buildPath_(vec_vec_bool& map, uPosition& robotPosition, uPosition& goalPosition)
 {
 	vec_uPosition path;
-	path.push_back({robotPosition.x, robotPosition.y, 0});
-	path.push_back({goalPosition.x, goalPosition.y, 0});
+	auto cmp = [](auto t1, auto t2){ return std::get<0>(t1) > std::get<0>(t2); };
+	std::priority_queue<std::tuple<double, u32, u32>, std::vector<std::tuple<double, u32, u32>>, decltype(cmp)> queue(cmp);
+	vec_vec_pair_u32x p(map.size(), vec_pair_u32x(map[0].size(), { 0, 0 }));
+	std::vector<std::vector<char>> v(map.size(), std::vector<char>(map[0].size(), false));
+	std::vector<std::vector<u32>> g(map.size(), std::vector<u32>(map[0].size(), UINT32_MAX));
+	const int minFreedomRadius = 0;
+	auto h = [&](u32 x, u32 y) { return sqrt(sqr(goalPosition.x - x) + sqr(goalPosition.y - y)); };
+	auto f = [&](u32 x, u32 y) { return g[x][y] + h(x, y); };
+	auto check = [&](int x, int y) { return 0 <= x && x < map.size() && 0 <= y && y < map[0].size(); };
+	auto hasEnoughSpace = [&](u32 x, u32 y) { 
+		u32 f = 0; 
+		for (int i = -minFreedomRadius; i <= minFreedomRadius; ++i) 
+			for (int j = -minFreedomRadius; j <= minFreedomRadius; ++j)
+				f += map[x + i][y + j];
+		return f > 0.92 * minFreedomRadius * minFreedomRadius;
+	};
+
+	bool found = false;
+	queue.push(std::make_tuple(0.0, robotPosition.x, robotPosition.y ));
+	v[robotPosition.x][robotPosition.y] = true;
+	g[robotPosition.x][robotPosition.y] = 0;
+	while (!queue.empty()) {
+		auto cur = queue.top();
+		queue.pop();
+
+		if (std::get<1>(cur) == goalPosition.x && std::get<2>(cur) == goalPosition.y) {
+			found = true;
+			break;
+		}
+
+		for (int i = -1; i <= 1; ++i)
+			for (int j = -1; j <= 1; ++j)
+				if (check(std::get<1>(cur) + i, std::get<2>(cur) + j) && map[std::get<1>(cur) + i][std::get<2>(cur) + j])
+					if (!v[std::get<1>(cur) + i][std::get<2>(cur) + j] && hasEnoughSpace(std::get<1>(cur) + i, std::get<2>(cur) + j)) {
+						if (g[std::get<1>(cur) + i][std::get<2>(cur) + j] == UINT32_MAX) {
+							g[std::get<1>(cur) + i][std::get<2>(cur) + j] = g[std::get<1>(cur)][std::get<2>(cur)] + 1;
+						}
+						queue.push(std::make_tuple( f(std::get<1>(cur) + i, std::get<2>(cur) + j), std::get<1>(cur) + i, std::get<2>(cur) + j ));
+						v[std::get<1>(cur) + i][std::get<2>(cur) + j] = true;			
+						p[std::get<1>(cur) + i][std::get<2>(cur) + j] = { std::get<1>(cur), std::get<2>(cur) };
+					}
+
+	}
+
+	if (found) {
+		auto x = goalPosition.x;
+		auto y = goalPosition.y;
+		while (x != robotPosition.x || y != robotPosition.y) {
+			auto x0 = x;
+			auto y0 = y;
+			path.push_back({x0, y0, 0});
+			x = p[x0][y0].first;
+			y = p[x0][y0].second;
+		}
+	}
+
+	std::reverse(path.begin(), path.end()); 
+
 	return path;
 }
 
 
 
-void Navigator::_mapCallback(const nav_msgs::OccupancyGrid::ConstPtr& pMap)
+void Navigator::mapCallback_(const nav_msgs::OccupancyGrid::ConstPtr& pMap)
 {
-	boost::shared_lock<boost::shared_mutex> sDLock(_dataMutex);
-	_hasNewMap = true;
-	_pMap = pMap;
-	_mapCondVar.notify_one();
+	boost::shared_lock<boost::shared_mutex> sDLock(dataMutex_);
+	hasNewMap_ = true;
+	pMap_ = pMap;
+	mapCondVar_.notify_one();
 }
 
 
 
-void Navigator::_goalCallback(const geometry_msgs::PoseStamped::ConstPtr& pGoal)
+void Navigator::goalCallback_(const geometry_msgs::PoseStamped::ConstPtr& pGoal)
 {
-	boost::shared_lock<boost::shared_mutex> sDLock(_dataMutex);
-	_hasNewGoal = true;
-	_pGoal = pGoal;
-	_goalCondVar.notify_one();
+	boost::shared_lock<boost::shared_mutex> sDLock(dataMutex_);
+	hasNewGoal_ = true;
+	pGoal_ = pGoal;
+	goalCondVar_.notify_one();
 }
 
 
 
-void Navigator::_odometryCallback(const nav_msgs::Odometry::ConstPtr& pOdometry)
+void Navigator::odometryCallback_(const nav_msgs::Odometry::ConstPtr& pOdometry)
 {
-	boost::shared_lock<boost::shared_mutex> sDLock(_dataMutex);
-	_hasNewOdometry = true;
-	_pOdometry = pOdometry;
-	_odometryCondVar.notify_one();
+	boost::shared_lock<boost::shared_mutex> sDLock(dataMutex_);
+	hasNewOdometry_ = true;
+	pOdometry_ = pOdometry;
+	odometryCondVar_.notify_one();
 }
 
 
 
-double Navigator::_getAngleFromQuaternion(const geometry_msgs::Quaternion& quaternion)
+double Navigator::getAngleFromQuaternion_(const geometry_msgs::Quaternion& quaternion)
 {
 	double w = quaternion.w;
 	double x = quaternion.x;

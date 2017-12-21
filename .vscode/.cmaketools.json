@@ -1,0 +1,4050 @@
+{
+  "variant": {
+    "label": "Debug",
+    "keywordSettings": {
+      "buildType": "debug"
+    },
+    "description": "Emit debug information without performing optimizations"
+  },
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "RelWithDebInfo",
+        "projects": [
+          {
+            "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+            "name": "Navigator",
+            "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+            "targets": [
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 72,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkin_download.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkin_download.cmake"
+                    },
+                    {
+                      "line": 147,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "line": 437,
+                      "name": "find_package",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "download_extra_data",
+                "name": "download_extra_data",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 392,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "test-results-run",
+                "name": "test-results-run",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 361,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "tests",
+                "name": "tests",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 382,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/rosbuild_clean-test-results",
+                      "build/CMakeFiles/rosbuild_clean-test-results.rule"
+                    ]
+                  }
+                ],
+                "fullName": "rosbuild_clean-test-results",
+                "name": "rosbuild_clean-test-results",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 70,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/roscpp/rosbuild/roscpp.cmake"
+                    },
+                    {
+                      "line": 87,
+                      "name": "gensrv_cpp",
+                      "path": "/opt/ros/kinetic/share/roscpp/rosbuild/roscpp.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roscpp/rosbuild/roscpp.cmake"
+                    },
+                    {
+                      "line": 49,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "line": 447,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "ROSBUILD_gensrv_cpp",
+                "name": "ROSBUILD_gensrv_cpp",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 416,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "rospack_genmsg",
+                "name": "rospack_genmsg",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 368,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "test",
+                "name": "test",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 74,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/roslisp/rosbuild/roslisp.cmake"
+                    },
+                    {
+                      "line": 92,
+                      "name": "gensrv_lisp",
+                      "path": "/opt/ros/kinetic/share/roslisp/rosbuild/roslisp.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roslisp/rosbuild/roslisp.cmake"
+                    },
+                    {
+                      "line": 49,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "line": 447,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "ROSBUILD_gensrv_lisp",
+                "name": "ROSBUILD_gensrv_lisp",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 389,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "test-future",
+                "name": "test-future",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 417,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "rospack_gensrv",
+                "name": "rospack_gensrv",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 431,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "rospack_genmsg_libexe",
+                "name": "rospack_genmsg_libexe",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "/home/daniel/Projects/ROS/sandbox/Navigator/bin/Navigator"
+                ],
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 509,
+                      "name": "add_executable",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 27,
+                      "name": "rosbuild_add_executable",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 534,
+                          "name": "target_link_libraries",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 27,
+                          "name": "rosbuild_add_executable",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": " -Wall -Wextra -pedantic -O2 -g -DNDEBUG   -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -std=gnu++14",
+                    "defines": [
+                      "ROS_PACKAGE_NAME=\"Navigator\""
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/src"
+                      },
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/include"
+                      },
+                      {
+                        "path": "/opt/ros/kinetic/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/main.cpp",
+                      "src/Navigator.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "Navigator",
+                "linkFlags": "-rdynamic  -pthread",
+                "linkLanguageFlags": "-Wall -Wextra -pedantic -O2 -g -DNDEBUG",
+                "linkLibraries": "-Wl,-rpath,/opt/ros/kinetic/lib -lroscpp -lpthread -lboost_signals -lboost_filesystem -lrosconsole -lrosconsole_log4cxx -lrosconsole_backend_interface -llog4cxx -lboost_regex -lxmlrpcpp -lroscpp_serialization -lrostime -lcpp_common -lboost_system -lboost_thread -lboost_chrono -lboost_date_time -lboost_atomic -lpthread -lconsole_bridge",
+                "linkPath": "-L/opt/ros/kinetic/lib",
+                "linkerLanguage": "CXX",
+                "name": "Navigator",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "EXECUTABLE"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 41,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/tools/doxygen.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/tools/doxygen.cmake"
+                    },
+                    {
+                      "line": 147,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "line": 437,
+                      "name": "find_package",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "doxygen",
+                "name": "doxygen",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 393,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/test-results",
+                      "build/CMakeFiles/test-results.rule"
+                    ]
+                  }
+                ],
+                "fullName": "test-results",
+                "name": "test-results",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 427,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "rosbuild_precompile",
+                "name": "rosbuild_precompile",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 74,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/test/tests.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/test/tests.cmake"
+                    },
+                    {
+                      "line": 147,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "line": 437,
+                      "name": "find_package",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "run_tests",
+                "name": "run_tests",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 79,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/test/tests.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/test/tests.cmake"
+                    },
+                    {
+                      "line": 147,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "line": 437,
+                      "name": "find_package",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/clean_test_results",
+                      "build/CMakeFiles/clean_test_results.rule"
+                    ]
+                  }
+                ],
+                "fullName": "clean_test_results",
+                "name": "clean_test_results",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 115,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake"
+                    },
+                    {
+                      "line": 437,
+                      "name": "find_package",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "_catkin_empty_exported_target",
+                "name": "_catkin_empty_exported_target",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 422,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "rosbuild_premsgsrvgen",
+                "name": "rosbuild_premsgsrvgen",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 29,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/roslisp/rosbuild/roslisp.cmake"
+                    },
+                    {
+                      "line": 45,
+                      "name": "genmsg_lisp",
+                      "path": "/opt/ros/kinetic/share/roslisp/rosbuild/roslisp.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roslisp/rosbuild/roslisp.cmake"
+                    },
+                    {
+                      "line": 49,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "line": 447,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "ROSBUILD_genmsg_lisp",
+                "name": "ROSBUILD_genmsg_lisp",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 27,
+                      "name": "add_custom_target",
+                      "path": "/opt/ros/kinetic/share/roscpp/rosbuild/roscpp.cmake"
+                    },
+                    {
+                      "line": 44,
+                      "name": "genmsg_cpp",
+                      "path": "/opt/ros/kinetic/share/roscpp/rosbuild/roscpp.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roscpp/rosbuild/roscpp.cmake"
+                    },
+                    {
+                      "line": 49,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "path": "/opt/ros/kinetic/share/roslang/cmake/roslang.cmake"
+                    },
+                    {
+                      "line": 447,
+                      "name": "include",
+                      "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                    },
+                    {
+                      "line": 20,
+                      "name": "rosbuild_init",
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 183,
+                          "name": "add_definitions",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 497,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fullName": "ROSBUILD_genmsg_cpp",
+                "name": "ROSBUILD_genmsg_cpp",
+                "sourceDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "/home/daniel/Projects/ROS/sandbox/Navigator/lib/libgtest_main.so"
+                ],
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 130,
+                      "name": "add_library",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 153,
+                      "name": "cxx_library_with_type",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 71,
+                      "name": "cxx_library",
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 135,
+                          "name": "set_target_properties",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 71,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 55,
+                          "name": "include_directories",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 140,
+                          "name": "target_link_libraries",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 71,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 72,
+                          "name": "target_link_libraries",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": " -Wall -Wextra -pedantic -O2 -g -DNDEBUG -fPIC    -Wall -Wextra -pedantic -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14",
+                    "defines": [
+                      "GTEST_CREATE_SHARED_LIBRARY=1",
+                      "ROS_PACKAGE_NAME=\"Navigator\"",
+                      "gtest_main_EXPORTS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/src"
+                      },
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/include"
+                      },
+                      {
+                        "path": "/opt/ros/kinetic/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/gtest_main.cc"
+                    ]
+                  }
+                ],
+                "fullName": "libgtest_main.so",
+                "linkLibraries": "-Wl,-rpath,/opt/ros/kinetic/lib:/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src:/home/daniel/Projects/ROS/sandbox/Navigator/lib -lpthread /home/daniel/Projects/ROS/sandbox/Navigator/lib/libgtest.so -lpthread",
+                "linkPath": "-L/opt/ros/kinetic/lib  -L/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src",
+                "linkerLanguage": "CXX",
+                "name": "gtest_main",
+                "sourceDirectory": "/usr/src/gtest",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "/home/daniel/Projects/ROS/sandbox/Navigator/lib/libgtest.so"
+                ],
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 130,
+                      "name": "add_library",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 153,
+                      "name": "cxx_library_with_type",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 70,
+                      "name": "cxx_library",
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 135,
+                          "name": "set_target_properties",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 70,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 55,
+                          "name": "include_directories",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 140,
+                          "name": "target_link_libraries",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 70,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": " -Wall -Wextra -pedantic -O2 -g -DNDEBUG -fPIC    -Wall -Wextra -pedantic -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14",
+                    "defines": [
+                      "GTEST_CREATE_SHARED_LIBRARY=1",
+                      "ROS_PACKAGE_NAME=\"Navigator\"",
+                      "gtest_EXPORTS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/src"
+                      },
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/include"
+                      },
+                      {
+                        "path": "/opt/ros/kinetic/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/gtest-all.cc"
+                    ]
+                  }
+                ],
+                "fullName": "libgtest.so",
+                "linkLibraries": "-Wl,-rpath,/opt/ros/kinetic/lib:/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src -lpthread",
+                "linkPath": "-L/opt/ros/kinetic/lib  -L/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src",
+                "linkerLanguage": "CXX",
+                "name": "gtest",
+                "sourceDirectory": "/usr/src/gtest",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          },
+          {
+            "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest",
+            "name": "gtest",
+            "sourceDirectory": "/usr/src/gtest",
+            "targets": [
+              {
+                "artifacts": [
+                  "/home/daniel/Projects/ROS/sandbox/Navigator/lib/libgtest_main.so"
+                ],
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 130,
+                      "name": "add_library",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 153,
+                      "name": "cxx_library_with_type",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 71,
+                      "name": "cxx_library",
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 135,
+                          "name": "set_target_properties",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 71,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 55,
+                          "name": "include_directories",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 140,
+                          "name": "target_link_libraries",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 71,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 72,
+                          "name": "target_link_libraries",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": " -Wall -Wextra -pedantic -O2 -g -DNDEBUG -fPIC    -Wall -Wextra -pedantic -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14",
+                    "defines": [
+                      "GTEST_CREATE_SHARED_LIBRARY=1",
+                      "ROS_PACKAGE_NAME=\"Navigator\"",
+                      "gtest_main_EXPORTS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/src"
+                      },
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/include"
+                      },
+                      {
+                        "path": "/opt/ros/kinetic/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/gtest_main.cc"
+                    ]
+                  }
+                ],
+                "fullName": "libgtest_main.so",
+                "linkLibraries": "-Wl,-rpath,/opt/ros/kinetic/lib:/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src:/home/daniel/Projects/ROS/sandbox/Navigator/lib -lpthread /home/daniel/Projects/ROS/sandbox/Navigator/lib/libgtest.so -lpthread",
+                "linkPath": "-L/opt/ros/kinetic/lib  -L/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src",
+                "linkerLanguage": "CXX",
+                "name": "gtest_main",
+                "sourceDirectory": "/usr/src/gtest",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "/home/daniel/Projects/ROS/sandbox/Navigator/lib/libgtest.so"
+                ],
+                "buildDirectory": "/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 130,
+                      "name": "add_library",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 153,
+                      "name": "cxx_library_with_type",
+                      "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                    },
+                    {
+                      "line": 70,
+                      "name": "cxx_library",
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/usr/src/gtest/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 135,
+                          "name": "set_target_properties",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 70,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [],
+                      "type": "target_compile_definitions"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 7,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 8,
+                          "name": "include_directories",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 200,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 299,
+                          "name": "include_directories",
+                          "path": "/opt/ros/kinetic/share/ros/core/rosbuild/public.cmake"
+                        },
+                        {
+                          "line": 20,
+                          "name": "rosbuild_init",
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/home/daniel/Projects/ROS/sandbox/Navigator/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 55,
+                          "name": "include_directories",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 140,
+                          "name": "target_link_libraries",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 153,
+                          "name": "cxx_library_with_type",
+                          "path": "/usr/src/gtest/cmake/internal_utils.cmake"
+                        },
+                        {
+                          "line": 70,
+                          "name": "cxx_library",
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/usr/src/gtest/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": " -Wall -Wextra -pedantic -O2 -g -DNDEBUG -fPIC    -Wall -Wextra -pedantic -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14",
+                    "defines": [
+                      "GTEST_CREATE_SHARED_LIBRARY=1",
+                      "ROS_PACKAGE_NAME=\"Navigator\"",
+                      "gtest_EXPORTS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/src"
+                      },
+                      {
+                        "path": "/home/daniel/Projects/ROS/sandbox/Navigator/include"
+                      },
+                      {
+                        "path": "/opt/ros/kinetic/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest/include"
+                      },
+                      {
+                        "path": "/usr/src/gtest"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/gtest-all.cc"
+                    ]
+                  }
+                ],
+                "fullName": "libgtest.so",
+                "linkLibraries": "-Wl,-rpath,/opt/ros/kinetic/lib:/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src -lpthread",
+                "linkPath": "-L/opt/ros/kinetic/lib  -L/home/daniel/Projects/ROS/sandbox/Navigator/build/gtest/src",
+                "linkerLanguage": "CXX",
+                "name": "gtest",
+                "sourceDirectory": "/usr/src/gtest",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.5336607169756997",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
+}

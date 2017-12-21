@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 2.4.6)
 
 set (CMAKE_CXX_STANDARD 14)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -pedantic")
 
 include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+include_directories(src)
 include_directories(include)
 
 # Set the build type.  Options are:
@@ -13,6 +15,8 @@ include_directories(include)
 #  MinSizeRel     : w/o debug symbols, w/ optimization, stripped binaries
 #set(ROS_BUILD_TYPE RelWithDebInfo)
 
+# add_definitions(-lboost_system)
+
 rosbuild_init()
 
 #set the default path for built executables to the "bin" directory
@@ -20,7 +24,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #set the default path for built libraries to the "lib" directory
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-rosbuild_add_executable(Navigator src/main.cpp src/Navigator.cpp src/arduino.cpp)
+rosbuild_add_executable(Navigator src/main.cpp src/Navigator.cpp)
 
 #uncomment if you have defined messages
 #rosbuild_genmsg()

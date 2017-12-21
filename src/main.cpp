@@ -1,43 +1,51 @@
 #include <memory>
+#include <string>
 
-#include "arduino.hpp"
-#include "Navigator.hpp"
+#include <std_msgs/String.h>
+
+#include "Navigator.h"
 
 int main(int argc, char* argv[])
 {
-	ros::init(argc, argv, "autonomusCarMovementSystem");
+	ros::init(argc, argv, "Navigator");
 
-	ros::NodeHandle nodeHandle;
+	ros::NodeHandle nodeHandler;
 
-	std::unique_ptr<Navigator> pNavigator(new Navigator(argc, argv, nodeHandle));
+	std::unique_ptr<Navigator> pNavigator(new Navigator(argc, argv, nodeHandler));
 
 	ros::AsyncSpinner spinner(3);
 	spinner.start();
 
-	ArduinoCtrl arduinoFW("/dev/ttyACM0");
+	ros::Publisher pub = nodeHandler.advertise<std_msgs::String>("Navigator/arduinoCommands", 1000);
 
-	int16_t angle = 0;
-	uint16_t speed = 0;
-	uint8_t direction = 0;
+	ros::Rate loop_rate(10);
+
+	std_msgs::String msg;
 
 	while (ros::ok())
 	{
-		Engine engine = pNavigator->getEngine();
+		Engine engine = pNavigator->getEngine();		
 
-		angle = engine.angle;
-		direction = engine.speed;
+		std::stringstream ss;
+		if (engine.speed == 0)
+			ss << "0 0";
+		else {
+			if (abs(engine.angle) < 15)
+				ss << "1 1";
+			else
+				if (0 < engine.angle)
+					ss << "1 -1";
+				else
+					ss << "-1 1";
+		}
+		msg.data = ss.str();
 
-		char bufBits[6];
-		bufBits[0] = 'M';
-		bufBits[1] = (angle&0xff);
-		bufBits[2] = (angle>>8);
-		bufBits[3] = (char)(speed&0xff);
-		bufBits[4] = (char)(speed>>8);
-		bufBits[5] = (char)(direction);
+		pub.publish(msg);
 
-		arduinoFW.sendCommand(bufBits, 6);
-
-		std::cout << engine.angle << ' ' << engine.speed << ' ' << engine.direction << std::endl;
+		ros::spinOnce();
+		loop_rate.sleep();
+		
+		std::cout << ss.str() << ' ' << engine.angle << ' ' << engine.speed << std::endl;
 	}
 
 	return 0;

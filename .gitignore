@@ -1,6 +1,4 @@
 build*
 bin
-*.dox
-*.xml
 *.user
 .cmaketools.json
