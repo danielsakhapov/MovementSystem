@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
 		ros::spinOnce();
 		loop_rate.sleep();
 		
-		std::cout << ss.str() << ' ' << engine.angle << ' ' << engine.speed << std::endl;
+		//std::cout << ss.str() << ' ' << engine.angle << ' ' << engine.speed << std::endl;
 	}
 
 	return 0;

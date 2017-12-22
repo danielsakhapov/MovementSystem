@@ -91,10 +91,10 @@ void Navigator::findPath_()
 			std::lock_guard<boost::shared_mutex> uPLock(pathMutex_);
 			path_.clear();
 			nav_msgs::Path rosPath;
-			rosPath.header.frame_id = "odom";
+			rosPath.header.frame_id = "map";
 			geometry_msgs::PoseStamped pose;
-			pose.header.frame_id = "odom";
-			for (auto it: path) {
+			pose.header.frame_id = "map";
+			for (const auto& it: path) {
 				pose.pose.position.x = it.y * mapResolution + mapAbsolutePositionX;
 				pose.pose.position.y = it.x * mapResolution + mapAbsolutePositionY;
 				path_.push_back({it.y * mapResolution, it.x * mapResolution, it.theta});
@@ -144,6 +144,8 @@ void Navigator::followPath_()
 		hasNewPath_ = false;
 		dPosition localGoal = path_.front();
 		path_.pop_front();
+			
+
 		uPLock.unlock();
 
 		dPosition robotPosition;
@@ -161,7 +163,7 @@ void Navigator::followPath_()
 			uDLock.unlock();
 
 			if (distance() < 0.1)
-				break;	
+				break;
 
 			uELock.lock();
 			engine_.angle = robotPosition.theta - localGoal.theta;
@@ -214,8 +216,8 @@ vec_uPosition Navigator::buildPath_(vec_vec_bool& map, uPosition& robotPosition,
 
 		for (int i = -1; i <= 1; ++i)
 			for (int j = -1; j <= 1; ++j)
-				if (check(std::get<1>(cur) + i, std::get<2>(cur) + j) && map[std::get<1>(cur) + i][std::get<2>(cur) + j])
-					if (!v[std::get<1>(cur) + i][std::get<2>(cur) + j] && hasEnoughSpace(std::get<1>(cur) + i, std::get<2>(cur) + j)) {
+				if (check(std::get<1>(cur) + i, std::get<2>(cur) + j)/* && map[std::get<1>(cur) + i][std::get<2>(cur) + j]*/)
+					if (!v[std::get<1>(cur) + i][std::get<2>(cur) + j]/* && hasEnoughSpace(std::get<1>(cur) + i, std::get<2>(cur) + j)*/) {
 						if (g[std::get<1>(cur) + i][std::get<2>(cur) + j] == UINT32_MAX) {
 							g[std::get<1>(cur) + i][std::get<2>(cur) + j] = g[std::get<1>(cur)][std::get<2>(cur)] + 1;
 						}
