@@ -144,7 +144,21 @@ void Navigator::followPath_()
 		hasNewPath_ = false;
 		dPosition localGoal = path_.front();
 		path_.pop_front();
-			
+
+		nav_msgs::Path rosPath;
+		rosPath.header.frame_id = "map";
+		geometry_msgs::PoseStamped pose;
+		pose.header.frame_id = "map";
+		std::unique_lock<boost::shared_mutex> uDLock0(dataMutex_);
+		double mapAbsolutePositionX = pMap_->info.origin.position.x;
+		double mapAbsolutePositionY = pMap_->info.origin.position.y;
+		uDLock0.unlock();
+		for (const auto& it: path_) {
+			pose.pose.position.x = it.x + mapAbsolutePositionX;
+			pose.pose.position.y = it.y + mapAbsolutePositionY;			
+			rosPath.poses.push_back(pose);
+		}
+		pathPublisher_.publish(rosPath);		
 
 		uPLock.unlock();
 
@@ -162,7 +176,7 @@ void Navigator::followPath_()
 			robotPosition.theta = getAngleFromQuaternion_(pOdometry_->pose.pose.orientation);
 			uDLock.unlock();
 
-			if (distance() < 0.1)
+			if (distance() < 0.5)
 				break;
 
 			uELock.lock();

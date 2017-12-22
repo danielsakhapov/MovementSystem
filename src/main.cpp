@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
 		if (engine.speed == 0)
 			ss << "0 0";
 		else {
-			if (abs(engine.angle) < 15)
+			if (abs(engine.angle) < 7)
 				ss << "1 1";
 			else
 				if (0 < engine.angle)
@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
 		ros::spinOnce();
 		loop_rate.sleep();
 		
-		//std::cout << ss.str() << ' ' << engine.angle << ' ' << engine.speed << std::endl;
+		std::cout << ss.str() << ' ' << engine.angle << ' ' << engine.speed << std::endl;
 	}
 
 	return 0;
